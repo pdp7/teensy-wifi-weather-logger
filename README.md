@@ -1,11 +1,11 @@
 # Teensy WiFi weather logging badge
-Weather WiFi logging badge with Teensy 3.2, ESP-01 module _(ESP8266)_, Adafruit 128x32 OLED (i2c) and Adafruit BME280 (i2c)
+Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sensor
 
 ## Bill of Materials:
-* [Teensy 3.2, OSH Park Edition](https://oshpark.com/teensy)
-* [ESP-01 (ESP8266 SoC)](https://www.amazon.com/Diymall%C2%AE-Esp8266-Serial-Wireless-Transceiver/dp/B00O34AGSU)
-* [Adafruit I2C OLED (128x32)](https://www.adafruit.com/product/931)
-* [Adafruit I2C BME280 (temp/hum/press)](https://www.adafruit.com/product/2652)
+* [Teensy 3.2 _(OSH Park Edition)_](https://oshpark.com/teensy)
+* [ESP-01 module _(ESP8266 SoC)_](https://www.amazon.com/Diymall%C2%AE-Esp8266-Serial-Wireless-Transceiver/dp/B00O34AGSU)
+* [Adafruit I2C OLED _(128x32)_](https://www.adafruit.com/product/931)
+* [Adafruit I2C BME280 _(temp/hum/press)_](https://www.adafruit.com/product/2652)
 
 ## OSH Park Shared Project:
 * **[Teensy WiFi weather logging badge](https://oshpark.com/projects/aCAtXvMP)**
