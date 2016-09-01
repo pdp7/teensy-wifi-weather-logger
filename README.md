@@ -1,5 +1,3 @@
-# teensy-wifi-weather-logger
-
 # Teensy WiFi weather logging badge
 Weather WiFi Logging Badge with ESP8266 and Teensy 3.2
 Weather badge with Teensy 3.2 or LC, Adafruit 128x32 OLED (i2c) and Adafruit BME280 (i2c) — 
@@ -31,7 +29,6 @@ This project released under the CERN Open Hardware v1.2 License
 * [Capacitive sensors with the Teensy 3.0](http://njhurst.com/blog/01356576041)
 * [SSD1306 display code based on example by Paul Stoffregen](https://www.pjrc.com/teensy/td_libs_SSD1306.html)
 * [SparkFun ESP8266 AT library - Phant Posting Example](https://github.com/sparkfun/SparkFun_ESP8266_AT_Arduino_Library) by Jim Lindblom @ SparkFun Electronics
-  
-  
+
 ## Contact
 * Drew Fustini &lt;drew@oshpark.com&gt;
