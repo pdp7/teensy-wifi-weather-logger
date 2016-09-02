@@ -22,10 +22,10 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
      * Hard coded fix to use Serial2 instead of Serial1 as connection to ESP8266
      * Commit: XXXXX
      * TODO: submit a pull request to SparkFun with more general fix
-   * Adafruit BME280 Library v1.0.4
-   * Adafruit Unified Sensor
-   * d
-   * 
+   * Adafruit BME280 `Adafruit_BME280_Library` v1.0.4
+   * Adafruit Unified Sensor `Adafruit_Unified_Sensor` v1.0.2
+   * Adafruit SSD1306 `Adafruit_SSD1306` v1.1.0
+   * Adafruit GFX v1.1.5
 
 ## Videos
 * _TODO_
