@@ -1,0 +1,418 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wickerlib
+LIBS:ESP8266
+LIBS:teensyi2c-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 5925 2150 0    60   ~ 0
+VIN
+$Comp
+L HEADER-FEMALE-6POS-TH-1x06-P0.1IN J2
+U 1 1 57712F77
+P 7550 3475
+F 0 "J2" H 7550 3925 50  0000 L CNN
+F 1 "OLED-I2C" H 7550 3825 50  0000 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x06" H 7550 3125 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 7550 3475 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x06" H 7550 3125 50  0001 C CIN "Package"
+F 5 "Harwin" H 7550 3125 50  0001 C CIN "MF_Name"
+F 6 "M20-7820642" H 7550 3125 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 7550 3125 50  0001 C CIN "S1_Name"
+F 8 "952-1808-ND" H 7550 3125 50  0001 C CIN "S1_PN"
+F 9 "HEADER FEMALE 6POS TH 1x06 0.1”" H 7550 3125 50  0001 C CIN "Description"
+F 10 "Not Verified" H 7550 3125 50  0001 C CIN "Verified"
+	1    7550 3475
+	1    0    0    -1  
+$EndComp
+Text Label 7150 3225 0    60   ~ 0
+SDA
+Text Label 7150 3325 0    60   ~ 0
+SCL
+Text Label 7150 3425 0    60   ~ 0
+RST
+Text Label 7150 3525 0    60   ~ 0
+GND
+Text Label 7150 3625 0    60   ~ 0
+3.3V
+Text Label 7175 3725 0    60   ~ 0
+VIN
+Text Label 5875 5150 0    60   ~ 0
+GND
+$Comp
+L HEADER-FEMALE-7POS-TH-1x07-P0.1IN J3
+U 1 1 57713409
+P 8725 3450
+F 0 "J3" H 8725 3900 50  0000 L CNN
+F 1 "ADAFRUIT_BME280" H 8725 3800 50  0000 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x07" H 8725 3100 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 8725 3450 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x07" H 8725 3100 50  0001 C CIN "Package"
+F 5 "Harwin" H 8725 3100 50  0001 C CIN "MF_Name"
+F 6 "M20-7822046" H 8725 3100 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 8725 3100 50  0001 C CIN "S1_Name"
+F 8 "952-1905-ND" H 8725 3100 50  0001 C CIN "S1_PN"
+F 9 "HEADER FEMALE 7POS TH 1x07 0.1”" H 8725 3100 50  0001 C CIN "Description"
+F 10 "Not Verified" H 8725 3100 50  0001 C CIN "Verified"
+	1    8725 3450
+	1    0    0    -1  
+$EndComp
+Text Label 8350 3150 0    60   ~ 0
+VIN
+Text Label 8325 3250 0    60   ~ 0
+3V0
+Text Label 8300 3350 0    60   ~ 0
+GND
+Text Label 8325 3450 0    60   ~ 0
+SCK
+Text Label 8325 3550 0    60   ~ 0
+SDO
+Text Label 8350 3650 0    60   ~ 0
+SDI
+Text Label 8375 3750 0    60   ~ 0
+CS
+$Comp
+L ESP-01v090 U1
+U 1 1 57998B43
+P 9575 4425
+F 0 "U1" H 9575 4325 50  0000 C CNN
+F 1 "ESP-01v090" H 9575 4525 50  0000 C CNN
+F 2 "ESP8266:ESP-01" H 9575 4425 50  0001 C CNN
+F 3 "" H 9575 4425 50  0001 C CNN
+	1    9575 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEENSY3.2-72MHz J1
+U 1 1 57998BF7
+P 5225 3700
+F 0 "J1" H 5025 5550 50  0000 L CNN
+F 1 "TEENSY3.2-72MHz" H 5025 1900 50  0000 L CNN
+F 2 "Wickerlib:TEENSY-3.2" V 4975 4850 50  0001 C CIN
+F 3 "https://www.pjrc.com/teensy/" H 5475 4350 5   0001 C CNN
+F 4 "UNDEFINED" V 4975 4850 50  0001 C CIN "Package"
+F 5 "PJRC" V 4975 4850 50  0001 C CIN "MF_Name"
+F 6 "TEENSY3.2" V 4975 4850 50  0001 C CIN "MF_PN"
+F 7 "PJRC" V 4975 4850 50  0001 C CIN "S1_Name"
+F 8 "TEENSY3.2" V 4975 4850 50  0001 C CIN "S1_PN"
+F 9 "TEENSY 3.2 32BIT 72MHZ" V 4975 4850 50  0001 C CIN "Description"
+F 10 "Not Verified" V 4975 4850 50  0001 C CIN "Verified"
+	1    5225 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 57999054
+P 8500 4225
+F 0 "R1" V 8425 4225 50  0000 C CNN
+F 1 "R" V 8500 4225 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 8430 4225 50  0001 C CNN
+F 3 "" H 8500 4225 50  0000 C CNN
+	1    8500 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 RST1
+U 1 1 579993C8
+P 8425 4475
+F 0 "RST1" H 8725 4475 50  0000 L CNN
+F 1 "RST" H 8550 4475 50  0000 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 8425 4125 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 8425 4475 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 8425 4125 50  0001 C CIN "Package"
+F 5 "Harwin" H 8425 4125 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 8425 4125 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 8425 4125 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 8425 4125 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 8425 4125 50  0001 C CIN "Description"
+F 10 "Not Verified" H 8425 4125 50  0001 C CIN "Verified"
+	1    8425 4475
+	-1   0    0    1   
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 GPIO2
+U 1 1 579994A9
+P 10725 4375
+F 0 "GPIO2" H 10850 4375 50  0000 L CNN
+F 1 "GPIO2" H 11150 4375 50  0000 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 10725 4025 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 10725 4375 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 10725 4025 50  0001 C CIN "Package"
+F 5 "Harwin" H 10725 4025 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 10725 4025 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 10725 4025 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 10725 4025 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 10725 4025 50  0001 C CIN "Description"
+F 10 "Not Verified" H 10725 4025 50  0001 C CIN "Verified"
+	1    10725 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 GPIO0
+U 1 1 57999556
+P 10725 4475
+F 0 "GPIO0" H 10850 4475 50  0000 L CNN
+F 1 "GPIO0" H 11150 4475 50  0000 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 10725 4125 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 10725 4475 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 10725 4125 50  0001 C CIN "Package"
+F 5 "Harwin" H 10725 4125 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 10725 4125 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 10725 4125 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 10725 4125 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 10725 4125 50  0001 C CIN "Description"
+F 10 "Not Verified" H 10725 4125 50  0001 C CIN "Verified"
+	1    10725 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 GND1
+U 1 1 57999AE9
+P 8200 5350
+F 0 "GND1" H 8500 5350 50  0000 L CNN
+F 1 "GND" H 8325 5350 50  0000 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 8200 5000 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 8200 5350 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 8200 5000 50  0001 C CIN "Package"
+F 5 "Harwin" H 8200 5000 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 8200 5000 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 8200 5000 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 8200 5000 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 8200 5000 50  0001 C CIN "Description"
+F 10 "Not Verified" H 8200 5000 50  0001 C CIN "Verified"
+	1    8200 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L HEADER-MALE-1POS-TH-1x01 3V3
+U 1 1 57999D59
+P 6900 1950
+F 0 "3V3" H 7200 1950 50  0000 L CNN
+F 1 "3V3" H 7025 1950 50  0000 L CNN
+F 2 "Wickerlib:Pin_Header_Straight_1x01" H 6900 1600 50  0001 C CIN
+F 3 "https://cdn.harwin.com/pdfs/60page140.pdf" H 6900 1950 5   0001 C CNN
+F 4 "Pin_Header_Straight_1x01" H 6900 1600 50  0001 C CIN "Package"
+F 5 "Harwin" H 6900 1600 50  0001 C CIN "MF_Name"
+F 6 "M20-9992046" H 6900 1600 50  0001 C CIN "MF_PN"
+F 7 "Digikey" H 6900 1600 50  0001 C CIN "S1_Name"
+F 8 "952-1902-ND" H 6900 1600 50  0001 C CIN "S1_PN"
+F 9 "HEADER MALE 1POS" H 6900 1600 50  0001 C CIN "Description"
+F 10 "Not Verified" H 6900 1600 50  0001 C CIN "Verified"
+	1    6900 1950
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 8200 3250
+NoConn ~ 8300 3725
+NoConn ~ 6950 3625
+NoConn ~ 5475 2450
+NoConn ~ 5475 2550
+NoConn ~ 5475 2650
+NoConn ~ 5475 2850
+NoConn ~ 5475 2950
+NoConn ~ 5475 3050
+NoConn ~ 5475 3150
+NoConn ~ 5475 3250
+NoConn ~ 5475 3550
+NoConn ~ 5475 3650
+NoConn ~ 5475 3750
+NoConn ~ 5475 3850
+NoConn ~ 5475 4050
+NoConn ~ 5475 4450
+NoConn ~ 5475 4550
+NoConn ~ 5475 4650
+NoConn ~ 5475 4750
+NoConn ~ 5525 4900
+NoConn ~ 5525 5000
+NoConn ~ 5475 5350
+NoConn ~ 5525 2300
+NoConn ~ 5525 2000
+$Comp
+L CAPSENSE_CIRCLE CAP1
+U 1 1 5799AACF
+P 6175 4525
+F 0 "CAP1" H 6425 4625 60  0000 L CNN
+F 1 "CAPSENSE_CIRCLE" H 6425 4425 60  0000 L CNN
+F 2 "Wickerlib:CAPSENSE_CIRCLE_D10" H 6175 4525 60  0001 C CNN
+F 3 "" H 6175 4525 60  0000 C CNN
+	1    6175 4525
+	1    0    0    -1  
+$EndComp
+Text Notes 5475 4350 0    47   ~ 0
+SCK
+Text Notes 5475 4250 0    47   ~ 0
+SDA
+NoConn ~ 8300 3550
+Wire Wire Line
+	6150 3425 7350 3425
+Wire Wire Line
+	6775 3525 7350 3525
+Wire Wire Line
+	7350 3625 6950 3625
+Wire Wire Line
+	7350 3725 6900 3725
+Wire Wire Line
+	6150 3425 6150 2750
+Wire Wire Line
+	6150 2750 5475 2750
+Wire Wire Line
+	6775 3525 6775 5250
+Wire Wire Line
+	5475 5150 11050 5150
+Wire Wire Line
+	6900 3725 6900 2150
+Wire Wire Line
+	8525 3150 8200 3150
+Wire Wire Line
+	8200 3150 8200 2150
+Connection ~ 6900 2150
+Wire Wire Line
+	8525 3350 8200 3350
+Wire Wire Line
+	8200 3350 8200 5150
+Connection ~ 6775 5150
+Wire Wire Line
+	8525 3450 7725 3450
+Wire Wire Line
+	7725 3450 7725 3900
+Wire Wire Line
+	7725 3900 5975 3900
+Connection ~ 5975 3900
+Wire Wire Line
+	8525 3650 7775 3650
+Wire Wire Line
+	7775 3650 7775 4025
+Wire Wire Line
+	7775 4025 5825 4025
+Connection ~ 5825 4025
+Wire Wire Line
+	8525 3250 8200 3250
+Wire Wire Line
+	8300 3550 8525 3550
+Wire Wire Line
+	8525 3750 8300 3750
+Wire Wire Line
+	8300 3750 8300 3725
+Wire Wire Line
+	10525 4275 11050 4275
+Wire Wire Line
+	11050 4275 11050 5150
+Connection ~ 8200 5150
+Wire Wire Line
+	8625 4575 8375 4575
+Wire Wire Line
+	8375 4575 8375 3900
+Wire Wire Line
+	8375 3900 9725 3900
+Wire Wire Line
+	9725 3900 9725 2150
+Connection ~ 8200 2150
+Wire Wire Line
+	8625 4375 8500 4375
+Wire Wire Line
+	8500 4075 8500 3900
+Connection ~ 8500 3900
+Wire Wire Line
+	5475 3350 5700 3350
+Wire Wire Line
+	5700 3350 5700 4275
+Wire Wire Line
+	5700 4275 8625 4275
+Wire Wire Line
+	5475 3450 5600 3450
+Wire Wire Line
+	5600 3450 5600 4925
+Wire Wire Line
+	5600 4925 10525 4925
+Wire Wire Line
+	10525 4925 10525 4575
+Wire Wire Line
+	6775 5250 5475 5250
+Wire Wire Line
+	5700 2200 5525 2200
+Wire Wire Line
+	5700 2100 5700 2200
+Wire Wire Line
+	9725 2150 5700 2150
+Wire Wire Line
+	5525 2100 5700 2100
+Connection ~ 5700 2150
+Wire Wire Line
+	5475 3950 5650 3950
+Wire Wire Line
+	5650 3950 5650 4525
+Wire Wire Line
+	5650 4525 5825 4525
+Wire Wire Line
+	5475 4250 5825 4250
+Wire Wire Line
+	5825 4250 5825 3225
+Wire Wire Line
+	5825 3225 7350 3225
+Text Notes 5900 4200 1    47   ~ 0
+SDA
+Text Notes 6250 4025 2    47   ~ 0
+SDA
+Text Notes 7150 4025 2    47   ~ 0
+SDA
+Text Notes 7850 3800 3    47   ~ 0
+SDA
+Text Notes 7950 3650 0    47   ~ 0
+SDA
+Wire Wire Line
+	5475 4350 5975 4350
+Wire Wire Line
+	5975 4350 5975 3325
+Wire Wire Line
+	5975 3325 7350 3325
+Text Notes 6050 4225 1    47   ~ 0
+SCK
+Text Notes 6050 3675 1    47   ~ 0
+SCK
+Text Notes 5900 3675 1    47   ~ 0
+SDA
+Text Notes 6650 3325 2    47   ~ 0
+SCK
+Text Notes 6650 3225 2    47   ~ 0
+SDA
+NoConn ~ 5475 4150
+$EndSCHEMATC
