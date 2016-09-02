@@ -29,7 +29,8 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
 * _TODO_
 
 ## Photos
-* _TODO_
+* [images](/images)
+![PCB preview top](https://github.com/pdp7/teensy-wifi-weather-logger/blob/master/images/pcb-preview-top.png)
 
 ## License
 This project released under the CERN Open Hardware v1.2 License
