@@ -34,7 +34,7 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
 ## License
 This project released under the CERN Open Hardware v1.2 License
 
-**Note:** `TODO.ino` contains code based on:
+**Note:** [teensy-wifi-weather-logger.ino](https://github.com/pdp7/teensy-wifi-weather-logger/blob/master/firmware/teensy-wifi-weather-logger/teensy-wifi-weather-logger.ino) contains code based on:
 
 * [Capacitive sensors with the Teensy 3.0](http://njhurst.com/blog/01356576041)
 * [SSD1306 display code based on example by Paul Stoffregen](https://www.pjrc.com/teensy/td_libs_SSD1306.html)
