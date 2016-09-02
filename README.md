@@ -15,6 +15,18 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
    * Commit: [5fb2f44 *connect GND pin for OLED to GND plane*
 ](https://github.com/pdp7/teensy-touch/commit/5fb2f44a5e37c01898689bddd4195240e6bf3efe)
 
+## Firmware
+* Developed with [Arduino 1.6.8](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous) with [Teensyduino 1.28](https://www.pjrc.com/teensy/td_download.html) on Intel x88 64-bit desktop running Debian GNU/Linux
+* Libraries
+   * [SparkFun_ESP8266_AT_Arduino_Library fork](https://github.com/pdp7/SparkFun_ESP8266_AT_Arduino_Library)
+     * Hard coded fix to use Serial2 instead of Serial1 as connection to ESP8266
+     * Commit: XXXXX
+     * TODO: submit a pull request to SparkFun with more general fix
+   * Adafruit BME280 Library v1.0.4
+   * Adafruit Unified Sensor
+   * d
+   * 
+
 ## Videos
 * _TODO_
 
