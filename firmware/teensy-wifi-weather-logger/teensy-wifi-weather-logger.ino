@@ -57,11 +57,26 @@ const String phantServer = "data.sparkfun.com";
 const String publicKey = "lz44lz7D61sGzD5K78EX";
 // Phant private key:
 const String privateKey = "Elxx7lW1p5hwZA2MKVnj";
-String httpHeader = "POST /input/" + publicKey + ".txt HTTP/1.1\n" +
+/* String httpHeader = "POST /input/" + publicKey + ".txt HTTP/1.1\n" +
                     "Host: " + phantServer + "\n" +
                     "Phant-Private-Key: " + privateKey + "\n" +
                     "Connection: close\n" +
                     "Content-Type: application/x-www-form-urlencoded\n";
+*/
+
+const String aio_key = "9197bce5b37f5dfc889f1e4b6a91298ed7f00261";
+const String hostname = "io.adafruit.com";
+const String path_prefix = "/api/feeds/";
+const String feed = "humidity";
+const String path_suffix = "/data.json";
+String httpHeader =
+  "POST " + path_prefix + feed + path_suffix + " HTTP/1.1\n" +
+  "Host: " + hostname + "\n" +
+  "X-AIO-Key: " + aio_key + "\n" +
+  "Content-Type: application/json\n" +
+  "Connection: close\n";
+
+
 
 void setup()
 {
@@ -90,7 +105,7 @@ void setup()
     display.print(F("  check  "));
     display.print(F("   BME280    "));
     display.display();
-    
+
     while (1) {
       delay(10000);
     }
@@ -229,18 +244,18 @@ void loop()
   Serial.println("%");
 
   // Post to SparkFun Phant server
-  postToPhant(temp_c_float);
+  postToPhant(humidity_float);
 
   delay(2000);
 
 }
 
-void postToPhant(float temp_c)
+void postToPhant(float sample)
 {
   // Create a client, and initiate a connection
   ESP8266Client client;
 
-  if (client.connect(phantServer, 80) <= 0)
+  if (client.connect(hostname, 80) <= 0)
   {
     Serial.println(F("Failed to connect"));
     display.clearDisplay();
@@ -256,7 +271,8 @@ void postToPhant(float temp_c)
 
   // Set up our Phant post parameters:
   String params;
-  params += "temp_c=" + String(temp_c);
+  params = "{\"value\": " + String(sample) + "}";
+  //params += "temp_c=" + String(temp_c);
   //params += "analog2=" + String(analogRead(A2)) + "&";
   //params += "analog5=" + String(analogRead(A5));
 
@@ -264,6 +280,7 @@ void postToPhant(float temp_c)
   Serial.println(params);
 
   client.print(httpHeader);
+  Serial.println(httpHeader);
   client.print("Content-Length: "); client.println(params.length());
   client.println();
   client.print(params);
