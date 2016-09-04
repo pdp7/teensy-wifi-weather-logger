@@ -26,7 +26,8 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
    * Adafruit GFX v1.1.5: `Adafruit_GFX`
 
 ## Videos
-* _TODO_
+* [Teensy WiFi Weather Logger](https://www.youtube.com/watch?v=4_19no4auhY)
+* [Teensy WiFi Weather Logger (short demo) ](https://www.youtube.com/watch?v=Mvm6nQrg_Dw)
 
 ## Photos
 * [Google Photos album](https://goo.gl/photos/Le2FGBFNvm8KNdKC9)
