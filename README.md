@@ -1,6 +1,8 @@
 # Teensy WiFi weather logging badge
 Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sensor
 
+![board closeup](https://raw.githubusercontent.com/pdp7/teensy-wifi-weather-logger/master/images/crop.png)
+
 ## Bill of Materials
 * [Teensy 3.2 _(OSH Park Edition)_](https://oshpark.com/teensy)
 * [ESP-01 module _(ESP8266 SoC)_](https://www.amazon.com/Diymall%C2%AE-Esp8266-Serial-Wireless-Transceiver/dp/B00O34AGSU)
@@ -13,6 +15,9 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
    * This is what was ordered and tested
    * File: [teensyi2c.kicad_pcb](https://github.com/pdp7/teensy-wifi-weather-logger/blob/7003174a60241e1a554e16e218b749da8fd9b785/hardware/teensyi2c.kicad_pcb)
    * Commit: [[7003174]](https://github.com/pdp7/teensy-wifi-weather-logger/commit/7003174a60241e1a554e16e218b749da8fd9b785)
+
+![PCB preview top](https://github.com/pdp7/teensy-wifi-weather-logger/blob/master/images/pcb.png)
+
 
 ## Firmware
 * Developed with [Arduino 1.6.8](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous) with [Teensyduino 1.28](https://www.pjrc.com/teensy/td_download.html) on Intel x88 64-bit desktop running Debian GNU/Linux
@@ -29,14 +34,17 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
 * [Adafruit.io dashboard](https://io.adafruit.com/drewfustini/teensy-weather-wifi-logger#)
 * [Adafruit.io group](https://io.adafruit.com/groups/79329)
 
+![adafruit.io dashboard](https://raw.githubusercontent.com/pdp7/teensy-wifi-weather-logger/master/images/adafruit-crop.png)
+
 ## Videos
 * [Teensy WiFi Weather Logger](https://www.youtube.com/watch?v=4_19no4auhY)
 * [Teensy WiFi Weather Logger (short demo) ](https://www.youtube.com/watch?v=Mvm6nQrg_Dw)
 
 ## Photos
 * [Google Photos album](https://goo.gl/photos/Le2FGBFNvm8KNdKC9)
-* [images](/images)
-![PCB preview top](https://github.com/pdp7/teensy-wifi-weather-logger/blob/master/images/pcb-preview-top.png)
+* [`images` dir](/images)
+
+![board closeup - tilt](https://raw.githubusercontent.com/pdp7/teensy-wifi-weather-logger/master/images/crop3.png)
 
 ## License
 This project released under the CERN Open Hardware v1.2 License
