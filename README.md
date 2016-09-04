@@ -32,7 +32,6 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
 
 ## Data:
 * [Adafruit.io dashboard](https://io.adafruit.com/drewfustini/teensy-weather-wifi-logger#)
-* [Adafruit.io group](https://io.adafruit.com/groups/79329)
 
 ![adafruit.io dashboard](https://raw.githubusercontent.com/pdp7/teensy-wifi-weather-logger/master/images/adafruit-crop.png)
 
