@@ -1,14 +1,14 @@
 # Teensy WiFi weather logging badge
 Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sensor
 
-## Bill of Materials:
+## Bill of Materials
 * [Teensy 3.2 _(OSH Park Edition)_](https://oshpark.com/teensy)
 * [ESP-01 module _(ESP8266 SoC)_](https://www.amazon.com/Diymall%C2%AE-Esp8266-Serial-Wireless-Transceiver/dp/B00O34AGSU)
 * [Adafruit I2C OLED _(128x32)_](https://www.adafruit.com/product/931)
 * [Adafruit I2C BME280 _(temp/hum/press)_](https://www.adafruit.com/product/2652)
 * 10K Ohm through-hole resistor
 
-## OSH Park Shared Project:
+## OSH Park Shared Project
 * **[Teensy WiFi weather logging badge](https://oshpark.com/projects/aCAtXvMP)**
    * This is what was ordered and tested
    * File: [teensyi2c.kicad_pcb](https://github.com/pdp7/teensy-wifi-weather-logger/blob/7003174a60241e1a554e16e218b749da8fd9b785/hardware/teensyi2c.kicad_pcb)
@@ -24,6 +24,10 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
    * Adafruit Unified Sensor v1.0.2: `Adafruit_Unified_Sensor`
    * Adafruit SSD1306 v1.1.0: `Adafruit_SSD1306` 
    * Adafruit GFX v1.1.5: `Adafruit_GFX`
+
+## Data:
+* [Adafruit.io dashboard](https://io.adafruit.com/drewfustini/teensy-weather-wifi-logger#)
+* [Adafruit.io group](https://io.adafruit.com/groups/79329)
 
 ## Videos
 * [Teensy WiFi Weather Logger](https://www.youtube.com/watch?v=4_19no4auhY)
