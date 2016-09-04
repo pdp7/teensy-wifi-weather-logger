@@ -11,9 +11,8 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
 ## OSH Park Shared Project:
 * **[Teensy WiFi weather logging badge](https://oshpark.com/projects/aCAtXvMP)**
    * This is what was ordered and tested
-   * File: [teensy-touch.kicad_pcb](https://github.com/pdp7/teensy-touch/blob/5fb2f44a5e37c01898689bddd4195240e6bf3efe/hardware/teensy-touch.kicad_pcb)
-   * Commit: [5fb2f44 *connect GND pin for OLED to GND plane*
-](https://github.com/pdp7/teensy-touch/commit/5fb2f44a5e37c01898689bddd4195240e6bf3efe)
+   * File: [teensyi2c.kicad_pcb](https://github.com/pdp7/teensy-wifi-weather-logger/blob/7003174a60241e1a554e16e218b749da8fd9b785/hardware/teensyi2c.kicad_pcb)
+   * Commit: [[7003174]](https://github.com/pdp7/teensy-wifi-weather-logger/commit/7003174a60241e1a554e16e218b749da8fd9b785)
 
 ## Firmware
 * Developed with [Arduino 1.6.8](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous) with [Teensyduino 1.28](https://www.pjrc.com/teensy/td_download.html) on Intel x88 64-bit desktop running Debian GNU/Linux
@@ -30,12 +29,14 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
 * _TODO_
 
 ## Photos
-* _TODO_
+* [Google Photos album](https://goo.gl/photos/Le2FGBFNvm8KNdKC9)
+* [images](/images)
+![PCB preview top](https://github.com/pdp7/teensy-wifi-weather-logger/blob/master/images/pcb-preview-top.png)
 
 ## License
 This project released under the CERN Open Hardware v1.2 License
 
-**Note:** `TODO.ino` contains code based on:
+**Note:** [teensy-wifi-weather-logger.ino](https://github.com/pdp7/teensy-wifi-weather-logger/blob/master/firmware/teensy-wifi-weather-logger/teensy-wifi-weather-logger.ino) contains code based on:
 
 * [Capacitive sensors with the Teensy 3.0](http://njhurst.com/blog/01356576041)
 * [SSD1306 display code based on example by Paul Stoffregen](https://www.pjrc.com/teensy/td_libs_SSD1306.html)
