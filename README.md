@@ -3,6 +3,9 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
 
 ![board closeup](https://raw.githubusercontent.com/pdp7/teensy-wifi-weather-logger/master/images/crop.png)
 
+## OSH Park blog post
+* [Teensy WiFi Weather Logger](https://blog.oshpark.com/2016/09/04/teensy-wifi-weather-logger/)
+
 ## Bill of Materials
 * [Teensy 3.2 _(OSH Park Edition)_](https://oshpark.com/teensy)
 * [ESP-01 module _(ESP8266 SoC)_](https://www.amazon.com/Diymall%C2%AE-Esp8266-Serial-Wireless-Transceiver/dp/B00O34AGSU)
