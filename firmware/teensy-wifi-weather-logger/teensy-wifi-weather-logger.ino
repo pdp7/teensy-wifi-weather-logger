@@ -42,6 +42,9 @@
 #include <Adafruit_SSD1306.h>
 #include <SparkFunESP8266WiFi.h>
 
+#define REFRESH_DELAY_S 300
+#define REFRESH_DELAY_MS (REFRESH_DELAY_S * 1000)
+
 // based on SSD1306 example by Paul Stoffregen
 // using software SPI (the default case):
 // https://www.pjrc.com/teensy/td_libs_SSD1306.html
@@ -58,8 +61,15 @@ Adafruit_BME280 bme; // I2C
 // WiFi Network Definitions
 // Replace these two character strings with the name and
 // password of your WiFi network.
-const char mySSID[] = "crocboss";
-const char myPSK[] = "RespectsYourFreedom2014";
+const char officeSSID[] = "OSH Park - SweetB";
+const char officePSK[] = "XXXXXXXXXX";
+
+const char hotspotSSID[] = "teleshark";
+const char hotspotPSK[] = "XXXXXXXXXX";
+
+const char *mySSID = hotspotSSID;
+const char *myPSK = hotspotPSK;
+
 
 // ATTENTION: REPLACE WITH YOUR OWN adafruit.io KEY
 // for additional adafruit.io info, visit:
@@ -69,7 +79,7 @@ const String hostname = "io.adafruit.com";
 const String path_prefix = "/api/feeds/";
 const String path_suffix = "/data.json";
 
-// TODO: create a more power efficient way to sleep forever
+// TODO: create a power efficient way to sleep forever
 void sleep_forever() {
   while (1) {
     delay(100000);
@@ -104,6 +114,7 @@ void setup()
     display.print(F("   BME280    "));
     display.display();
   }
+  delay(500);
 
   Serial.println(F("BME280 OK"));
   display.clearDisplay();
@@ -233,7 +244,7 @@ void loop()
   postValue("temperature_fahrenheit", temp_f_float);
   postValue("humidity", humidity_float);
 
-  delay(2000);
+  delay(REFRESH_DELAY_MS);
 
 }
 
