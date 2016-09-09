@@ -42,7 +42,7 @@
 #include <Adafruit_SSD1306.h>
 #include <SparkFunESP8266WiFi.h>
 
-#define REFRESH_DELAY_S 300
+#define REFRESH_DELAY_S 2
 #define REFRESH_DELAY_MS (REFRESH_DELAY_S * 1000)
 
 // based on SSD1306 example by Paul Stoffregen
