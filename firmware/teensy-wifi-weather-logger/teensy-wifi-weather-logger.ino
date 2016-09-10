@@ -45,6 +45,15 @@
 #define REFRESH_DELAY_S 2
 #define REFRESH_DELAY_MS (REFRESH_DELAY_S * 1000)
 
+/* 
+ *  Adjust for thermal load of the ESP8266 WiFi
+ *  when transmitting quickly (every 2 seconds)
+ *  I found that the BME280 sensor temperature
+ *  was 1.5 deg C above another BME280 sensor 
+ *  board with no ESP8266.  
+ */
+#define ESP8266_THERMAL_ADJUST_C 1.5
+
 // based on SSD1306 example by Paul Stoffregen
 // using software SPI (the default case):
 // https://www.pjrc.com/teensy/td_libs_SSD1306.html
@@ -154,7 +163,8 @@ void setup()
   {
     if (esp8266.connect(mySSID, myPSK) < 0)
     {
-      Serial.print(F("Error connecting to SSID:"));
+      Serial.print(F("Error connecting to SSID: "));
+      Serial.println(mySSID);
       display.clearDisplay();
       display.setCursor(0, 0);
       display.setTextSize(2);
@@ -183,7 +193,7 @@ void setup()
 void loop()
 {
 
-  float temp_c_float = bme.readTemperature();
+  float temp_c_float = bme.readTemperature() - ESP8266_THERMAL_ADJUST_C;
   int temp_c = round( temp_c_float );
 
   float temp_f_float = ( (temp_c_float * 9.0) / 5.0 ) + 32.0;
