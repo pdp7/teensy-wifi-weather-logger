@@ -21,6 +21,9 @@ Weather WiFi logging badge with Teensy 3.2, ESP8266, 128x32 OLED and BME280 sens
 
 ![PCB preview top](https://github.com/pdp7/teensy-wifi-weather-logger/blob/master/images/pcb.png)
 
+## Schematic
+![Schematic](https://github.com/pdp7/teensy-wifi-weather-logger/blob/master/images/schematic.png)
+
 
 ## Firmware
 * Developed with [Arduino 1.6.8](https://www.arduino.cc/en/Main/OldSoftwareReleases#previous) with [Teensyduino 1.28](https://www.pjrc.com/teensy/td_download.html) on Intel x88 64-bit desktop running Debian GNU/Linux
